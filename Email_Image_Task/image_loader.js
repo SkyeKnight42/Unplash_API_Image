@@ -56,7 +56,6 @@ function createImageBox(_image, _email) {
     imageBox.classList.add('image_box')
     imageBox.id= email
     imageContainer.appendChild(imageBox)
-    // imageBox.append(<p>Test</p>)
     imageBox.insertAdjacentHTML("beforeend", `<p>${email}</p><img src="${image}" class="image">`)
 }
 
@@ -81,28 +80,7 @@ function previewImage() {
             document.getElementById('preview_image').src = imageURL
             APIError.style.color='white' 
         })
-        .catch(() => {
-            console.log("Fail")
+        .catch(function() {
             APIError.style.color = 'red'
         })
 }
-
-
-
-// function searchPhotos(_email) {
-//     const url = "https://api.unsplash.com/photos/random/?client_id="+AccessKey
-//     const email = _email
-//     fetch(url)
-//         .then(function (data) {
-//             return data.json()
-//         })
-//         .then(function(data) {
-//             console.log(data)
-
-//             if (testedEmail) {
-//                 addImagetoBox(data.urls.regular, email)
-//             } else {
-//                 createImageBox(data.urls.regular, email)
-//             }
-//         })
-// }
