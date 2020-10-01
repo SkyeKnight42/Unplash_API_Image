@@ -1,0 +1,145 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px black;
+  width: 1400px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content_container h2 {
+  margin: 25px 100px 0;
+  padding: 0 25px;
+}
+
+.content_container .API_error {
+  display: block;
+  width: 100%;
+  height: 32px;
+  font-size: 24px;
+  color: red;
+  margin: 0 50px;
+  padding-left: 50px;
+}
+
+.content_container .image_preview {
+  margin: 0 100px 0;
+  width: 1200px;
+  height: auto;
+  border: solid 1px black;
+  border-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content_container .image_preview .preview_image {
+  margin: 50px 0;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content_container .input_container {
+  border: solid 1px black;
+  margin: 0 100px;
+  height: 200px;
+  width: 1200px;
+  padding: 0 100px;
+  border-bottom: none;
+}
+
+.content_container .input_container h2 {
+  padding-top: 25px;
+  margin: 0 0;
+}
+
+.content_container .input_container .email_error {
+  display: block;
+  width: 100%;
+  height: 16px;
+}
+
+.content_container .input_container .email_error p {
+  color: red;
+  padding-left: 20px;
+}
+
+.content_container .input_container input {
+  height: 25px;
+  padding: 25px;
+  font-size: 16px;
+  margin-right: 25px;
+}
+
+.content_container .input_container .add_button {
+  width: 75px;
+  height: 25px;
+  border: solid 1px darkgrey;
+  padding: 17px 25px;
+}
+
+.content_container .input_container .new_button {
+  margin-left: 100px;
+  width: 75px;
+  height: 25px;
+  border: solid 1px darkgrey;
+  padding: 17px 25px;
+}
+
+.content_container .image_container {
+  margin: 0 100px 50px;
+  padding: 50px 50px;
+  width: 1200px;
+  height: auto;
+  border: solid 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content_container .image_container .image_box {
+  margin: 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  border: solid 1px grey;
+  padding: 25px;
+}
+
+.content_container .image_container .image_box .image {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.content_container .image_container .image_box p {
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
